@@ -1,18 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css';
 
-// exuses variables
-let who = ['The dog', 'My grandma', 'His turtle', 'My bird'];
-let action = ['ate', 'peed', 'crushed', 'broke'];
-let what = ['my homework', 'the keys', 'the car'];
-let when = ['before the class', 'right on time', 'when I finished', 'during my lunch', 'while I was praying'];
-
-
-const button = document.getElementById('button'); 
-const element = document.getElementById('excuse');
 
 function generateExcuse () {
-
+      
       let randomExcuse = []
 
       //who 
@@ -37,9 +28,19 @@ function generateExcuse () {
       element.innerHTML = randomExcuse.join(' ');
 
       console.log(randomExcuse)
-  
 }
 
+
+//variables
+let who = ['The dog', 'My grandma', 'His turtle', 'My bird'];
+let action = ['ate', 'peed', 'crushed', 'broke'];
+let what = ['my homework', 'the keys', 'the car'];
+let when = ['before the class', 'right on time', 'when I finished', 'during my lunch', 'while I was praying'];
+
+const button = document.getElementById('button'); 
+const element = document.getElementById('excuse');
+
+// events
 button.addEventListener('click', generateExcuse);
 
  
